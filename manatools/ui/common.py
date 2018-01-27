@@ -81,6 +81,8 @@ def infoMsgBox (info) :
     if (not info) :
         return 0
 
+    gettext.install('python-manatools', localedir='/usr/share/locale')
+
     retVal = 0
     yui.YUI.widgetFactory
     factory = yui.YExternalWidgets.externalWidgetFactory("mga")
