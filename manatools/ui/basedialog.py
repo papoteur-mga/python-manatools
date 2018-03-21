@@ -43,7 +43,7 @@ class BaseDialog :
       basedialog.BaseDialog.__init__(self, "My beautiful dialog")
     
     def UIlayout(self, layout):
-      self.quitButton = self.factory.createPushButton(layout, "&Quit")
+      self.quitButton = self.factory.createPushButton(layout, "Quit")
       self.eventManager.addWidgetEvent(self.quitButton, self.onQuitEvent)
     
     def onQuitEvent(self) :

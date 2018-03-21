@@ -59,7 +59,7 @@ def warningMsgBox (info) :
     if ('text' in info.keys()) :
         dlg.setText(info['text'], rt)
 
-    dlg.setButtonLabel(_("&Ok"), yui.YMGAMessageBox.B_ONE )
+    dlg.setButtonLabel(_("Ok"), yui.YMGAMessageBox.B_ONE )
 #   dlg.setMinSize(50, 5)
 
     retVal = dlg.show()
@@ -99,7 +99,7 @@ def infoMsgBox (info) :
     if ('text' in info.keys()) :
         dlg.setText(info['text'], rt)
 
-    dlg.setButtonLabel(_("&Ok"), yui.YMGAMessageBox.B_ONE )
+    dlg.setButtonLabel(_("Ok"), yui.YMGAMessageBox.B_ONE )
 #   dlg.setMinSize(50, 5)
 
     retVal = dlg.show()
@@ -135,7 +135,7 @@ def msgBox (info) :
     if ('text' in info.keys()) :
         dlg.setText(info['text'], rt)
 
-    dlg.setButtonLabel(_("&Ok"), yui.YMGAMessageBox.B_ONE )
+    dlg.setButtonLabel(_("Ok"), yui.YMGAMessageBox.B_ONE )
 #   dlg.setMinSize(50, 5)
 
     retVal = dlg.show()
@@ -178,8 +178,8 @@ def askOkCancel (info) :
     if ('text' in info.keys()) :
         dlg.setText(info['text'], rt)
 
-    dlg.setButtonLabel(_("&Ok"), yui.YMGAMessageBox.B_ONE )
-    dlg.setButtonLabel(_("&Cancel"), yui.YMGAMessageBox.B_TWO )
+    dlg.setButtonLabel(_("Ok"), yui.YMGAMessageBox.B_ONE )
+    dlg.setButtonLabel(_("Cancel"), yui.YMGAMessageBox.B_TWO )
 
     if ("default_button" in info.keys() and info["default_button"] == 1) :
         dlg.setDefaultButton(yui.YMGAMessageBox.B_ONE)
@@ -228,8 +228,8 @@ def askYesOrNo (info) :
     if ('text' in info.keys()) :
         dlg.setText(info['text'], rt)
 
-    dlg.setButtonLabel(_("&Yes"), yui.YMGAMessageBox.B_ONE )
-    dlg.setButtonLabel(_("&No"), yui.YMGAMessageBox.B_TWO )
+    dlg.setButtonLabel(_("Yes"), yui.YMGAMessageBox.B_ONE )
+    dlg.setButtonLabel(_("No"), yui.YMGAMessageBox.B_TWO )
     if ("default_button" in info.keys() and info["default_button"] == 1) :
         dlg.setDefaultButton(yui.YMGAMessageBox.B_ONE)
     else :
